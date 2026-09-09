@@ -9,5 +9,6 @@
     }
   },
   "autoUpdatesChannel": "latest",
-  "theme": "dark"
+  "theme": "dark",
+  "model": "opus"
 }
