@@ -36,9 +36,9 @@ process.stdin.on("end", () => {
 
   let pctPart = "n/a";
   if (typeof usedPct === "number") {
-    pctPart = `${usedPct.toFixed(1)}% used`;
+    pctPart = `${usedPct.toFixed(1)}% used (${(100 - usedPct).toFixed(1)}% left)`;
   } else if (typeof remainingPct === "number") {
-    pctPart = `${(100 - remainingPct).toFixed(1)}% used`;
+    pctPart = `${(100 - remainingPct).toFixed(1)}% used (${remainingPct.toFixed(1)}% left)`;
   }
 
   const dir = (data.workspace && data.workspace.current_dir) || data.cwd || "";
