@@ -1,0 +1,30 @@
+# 민감정보 / 인증
+.credentials.json
+.last-update-result.json
+.last-cleanup
+
+# 세션/대화 이력 (용량 크고 민감한 프로젝트별 대화 원문 포함)
+history.jsonl
+projects/*
+!projects/C--Users-user
+projects/C--Users-user/*
+!projects/C--Users-user/memory
+sessions/
+session-env/
+shell-snapshots/
+
+# 캐시/런타임/로그성 데이터
+cache/
+backups/
+telemetry/
+daemon/
+daemon.log
+jobs/
+tasks/
+downloads/
+ide/
+chrome/
+file-history/
+
+# 플러그인 마켓플레이스 캐시
+plugins/
