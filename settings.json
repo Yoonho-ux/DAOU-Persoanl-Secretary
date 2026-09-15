@@ -1,4 +1,5 @@
 {
+  "model": "opus",
   "statusLine": {
     "type": "command",
     "command": "node C:\\Users\\user\\.claude\\statusline-command.js"
@@ -10,5 +11,33 @@
   },
   "autoUpdatesChannel": "latest",
   "theme": "dark",
-  "model": "opus"
+  "autoMode": {
+    "environment": [
+      "### Org-wide",
+      "**Organization**: None configured",
+      "**Cloud provider(s)**: None configured",
+      "**Repository visibility**: Not queryable here — no git remotes configured in this working directory; assume private",
+      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: None configured",
+      "**Default / protected branches**: Not queryable here — no remotes, default branch unknown (origin/HEAD unset)",
+      "**CI/CD deploy targets**: None configured",
+      "**Network posture**: None configured",
+      "**Host containment**: None configured — assume Claude Code runs on an ordinary developer machine with open internet",
+      "**Source control**: No git remotes found in this directory (C:\\Users\\user) — this working directory does not appear to be inside a tracked repo with a remote; no additional orgs configured",
+      "**Trusted internal domains**: None configured",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: None configured",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: .claude/.credentials.json and .claude/agents/secretary.md (contains personal-assistant instructions referencing user's home CLAUDE.md and Notion/Excel personal data) — treat as credential/personal material, share only with the user",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment",
+      "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
+      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
+      "### User-specific",
+      "**Primary use of Claude Code**: personal-assistant / multi-agent orchestration (secretary, developer, designer, pm sub-agents) plus general software development, per .claude/agents and .claude/skills configuration",
+      "**Trusted repo**: No git repository detected at this path (C:\\Users\\user) — this appears to be the user's home directory, not a project checkout; treat file operations here as personal/user-scope, not repo-scoped",
+      "**Org-specific CLIs**: None configured",
+      "**Routine under user's home prefix**: .claude/ configuration directory (agents, skills) treated as routine personal config, not a project codebase"
+    ]
+  }
 }
